@@ -1,53 +1,65 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>X Games</title>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Online bank</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 <div class="wrapper">
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../img/logo.svg" alt="Логотип">
-            </div>
-            <nav>
-                <ul>
-                    <li>
-                        <button class="list_item_button"><a href="index.html">Главная</a></button>
-                    </li>
-                    <li>
-                        <button class="list_item_button"><a href="products.html">Каталог товаров</a></button>
-                    </li>
-                    <li>
-                        <button class="list_item_button"><a href="login.html">Войти</a></button>
-                    </li>
-                    <li>
-                        <button class="list_item_button"><a href="register.html">Регистрация</a></button>
-                    </li>
-                </ul>
-            </nav>
+  <header id="header" class="fixed-top">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">OnlineBank</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Личный кабинет</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Перевод</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">История платежей</a>
+              </li>
+            </ul>
+            <button class="btn btn-outline-success me-3" type="submit">Войти</button>
+            <button class="btn btn-outline-success" type="submit">Зарегистрироваться</button>
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
-    <main class="container">
-        <p class="">
-            GamesMarket — онлайн-сервис цифрового распространения компьютерных игр и программ. GamesMarket выполняет
-            роль средства технической защиты авторских прав, платформы для многопользовательских игр и потокового
-            вещания, а также социальной сети для игроков.
-        </p>
-    </main>
+  <main></main>
 
-    <footer>
-        <div class="container">
-            <div>&copy; GamesMarket, 2022</div>
-            <div>+7(908)781-34-17</div>
-        </div>
+  <div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+      </ul>
+      <p class="text-center text-muted">© 2022 OnlineBank, Inc</p>
     </footer>
+  </div>
 </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 </html>
