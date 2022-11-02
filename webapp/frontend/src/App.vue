@@ -38,12 +38,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
-import LoginPage from "@/views/LoginPage";
 
 export default {
     name: 'App',
     components: {
-        LoginPage,
         Footer,
         NavigationBar
     }
