@@ -78,6 +78,13 @@ def money_transfer(request):
             user_from.save()
             user_to.save()
 
+            money_transfer = MoneyTransfer()
+            money_transfer.transfer_money_count = int(money)
+            money_transfer.user_from = user_from
+            money_transfer.user_to = user_to
+
+            money_transfer.save()
+
             response = {"success": "Перевод прошел успешно"}
 
         else:
@@ -105,7 +112,7 @@ def registration(request):
         user.name = name
         user.sur_name = sur_name
         user.password = password
-        user.money_count = 0
+        user.money_count = 1000
         user.phone_number = phone_number
 
         user.save()
